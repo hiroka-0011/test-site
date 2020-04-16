@@ -1,2 +1,4 @@
 # test-site
-カフェのサイト練習
+index.html
+style.css
+img
