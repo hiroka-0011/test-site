@@ -11,7 +11,18 @@ html {
 }
 
 body {
-    font-family:'Lato','Noto Sans JP', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: YakuHanJPs,'Lato',
+    'Noto Sans JP',
+    "游ゴシック Medium",
+    "Yu Gothic Medium",
+    "游ゴシック体",
+    YuGothic,
+    "メイリオ",
+    Meiryo,
+    Osaka,
+    "ＭＳ Ｐゴシック",
+    "MS PGothic",
+    sans-serif;
     line-height: 1.8;
     word-break: break-all;
     color: $text-color;
