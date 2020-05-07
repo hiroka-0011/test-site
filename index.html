@@ -24,8 +24,8 @@
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li><a class="active" href="#">top</a></li>
-                    <li><a href="#menu">menu</a></li>
-                    <li><a href="#info">infomation</a></li>
+                    <li><a class="js-smooth-scroll" href="#menu">menu</a></li>
+                    <li><a class="js-smooth-scroll" href="#info">infomation</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,17 @@
                     </span>
                 </h2>
             </div>
-            <div class="clip-mask"></div>
+            <div class="clip-mask">
+                <video id="video1" poster="img/shop.jpg" controls autoplay>
+                    <source src="img/coffee.mp4" type="video/mp4">
+                </video>
+                <video id="video2" poster="img/shop.jpg" controls>
+                    <source src="img/cafe.mp4" type="video/mp4">
+                </video>
+                <video id="video3" poster="img/shop.jpg" controls>
+                    <source src="img/cafe-art.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="hero-inner title-back">
                 <h2 class="hero-title back">
                     <span>
@@ -110,12 +120,15 @@
                                 ¥430
                             </dd>
                         </dl>
+                        <div class="menu-btn pt40">
+                            <a href="#!" class="button-more">すべてのメニューへ</a>
+                        </div>
                     </div>
                 </div>
                 <div class="menu-bg"></div>
             </div>
         </section>
-        <section id="#info" class="infomation mb100">
+        <section id="info" class="infomation mb100">
             <div class="inner">
                 <h3 class="headline fs36 txt-c mb30">infomation</h3>
                 <div class="shop-info">
@@ -130,6 +143,20 @@
                             11:00~23:00 <br> 火曜・祝日定休日 <br>TEL 03-123-5678
                         </p>
                     </div>
+                    <div class="shop-info__sns mb30">
+                        <ul class="shareList">
+                            <li class="shareList-item">
+                                <a class="icon icon-twitter" href="#" title="Twitter">
+                                    <i class="fab fa-twitter twitter"></i>
+                                </a>
+                            </li>
+                            <li class="shareList-item">
+                                <a class="icon icon-facebook" href="#" title="Facebook">
+                                    <i class="fab fa-facebook facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.6582981370375!2d139.70868482509434!3d35.63428779927202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b1eb6dc8f69%3A0x85624a5276fc423e!2z55uu6buS6aeF!5e0!3m2!1sja!2sjp!4v1587960330739!5m2!1sja!2sjp"
@@ -142,9 +169,11 @@
     </main>
     <footer>
         <copyright class="txt-c">
-            <p class="fs10">2020 cafe cocoda!</p>
+            <p class="fs10">2020&copy;cafe cocoda!</p>
         </copyright>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script type='text/javascript' src="js/style.js"></script>
 </body>
 
 </html>

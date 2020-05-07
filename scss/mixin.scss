@@ -5,3 +5,32 @@ $line-color :#BC9F77;
 $color-red:#EB5757;
 $color-blue: #2F80ED;
 $footer-bg:#21201E;
+$btn-color:#121212;
+
+/*--------------------------------
+メディアクエリ
+---------------------------------*/
+$breakpoint-sm: 480px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1000px !default;
+
+// max-width
+$breakpoints: ('sm': 'screen and (max-width: 479px)',
+    'md': 'screen and (max-width: 767px)',
+    'lg': 'screen and (max-width: 999px)',
+    'xl': 'screen and (max-width: 1199px)',
+);
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// link_btn
+@mixin gradientBg($startColor, $endColor) {
+    background: $startColor;
+    background: -moz-linear-gradient(left, $startColor 0%, $endColor 80%, $endColor 100%);
+    background: -webkit-linear-gradient(left, $startColor 0%, $endColor 80%, $endColor 100%);
+    background: linear-gradient(to right, $startColor 0%, $endColor 80%, $endColor 100%);
+}
